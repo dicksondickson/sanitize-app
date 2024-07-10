@@ -1,4 +1,4 @@
-# SANITIZE APP  
+# SANITIZE APP DEV  
 
 Remove EXIF data from an image and save the result to a new file,
 retaining the ICC color profile if present. The output file will
