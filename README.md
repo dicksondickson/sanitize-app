@@ -15,11 +15,11 @@ Main python script.
 
 Copy the Python script to the folder with images you want to sanitize and run ```python sanitize.py```. A ```sanitized``` sub folder will be created and the output files will have the same name as the input file with '_sanitized' appended.   
 
-You can also run ```paython sanitize.py /path/to/your/images/directory```.   
+You can also run ```python sanitize.py /path/to/your/images/directory```.   
  
 
 ## sanitize.bat  
-Batch file is for calling sanitize.py in Windows from any folder. Add path to the Python script and batch file in the windows environment paths and call sanitize from anywhere.  
+Batch file is for calling sanitize.py in Windows from any folder. Add the path to the Python script and batch file in the windows environment paths and call sanitize from anywhere.  
 
 
 ## LICENSE  
