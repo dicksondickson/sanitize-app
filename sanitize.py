@@ -20,15 +20,18 @@ def remove_exif(input_image_path, output_image_path):
     
     """
     # Open the image file
-    image = Image.open(input_image_path)
+    imageLoad = Image.open(input_image_path)
+    image = imageLoad.convert('RGB')
 
     # Get the ICC profile if it exists
     icc_profile = image.info.get('icc_profile')
 
     # Strip EXIF data by getting the image data and creating a new image
     data = list(image.getdata())
+    
     image_without_exif = Image.new(image.mode, image.size)
     image_without_exif.putdata(data)
+    
 
     # Save the new image without EXIF data and with the ICC profile if present
     if icc_profile:
